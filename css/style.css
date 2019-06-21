@@ -1,0 +1,227 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+.clearfix {
+    clear: both;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.page_cell {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.page_row h2 {
+    text-align: center;
+    margin: 40px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+/* ================ HEADER ================ */
+
+.header {
+    margin-top: 35px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 30px;
+}
+
+.header__logo {
+    float: left;
+}
+
+.header__contact {
+    float: right;
+    text-align: right;
+}
+
+.header__mail {
+    margin-top: 6px;
+}
+
+.tel {
+    
+    font-weight: bold;
+    font-size: 25px;
+    color: #000;
+    line-height: 16px;
+}
+
+.email {
+    font-weight: 300;
+    line-height: 16px;
+    font-size: 16px;
+    color: #808080;
+}
+
+/* ================ NAVIGATION ================ */
+
+.nav__menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 28px;
+}
+
+.nav__item {
+    font-weight: 300;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.nav__item:hover {
+    color: #f44336;
+}
+
+/* ================ SLIDER ================ */
+
+.slider__item {
+    background: url('../images/1.png');
+    background-size: cover;
+    background-position: center;
+    padding-top: 36%;
+}
+
+/* ================ SLIDER BUTTONS ================*/
+
+.owl-dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+}
+
+.owl-carousel button.owl-dot {
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin: 0 6px;
+}
+
+.owl-carousel button.owl-dot.active {
+    background: #000;
+    border-color: #000;
+}
+
+/* ================ About ================*/
+
+.about_desc {
+    
+}
+
+.about_desc p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.about_desc__first_p {
+    margin-bottom: 27px;
+}
+
+/* ================ Popular ================*/
+
+.popular_container {
+    display: grid;
+    grid-template-rows: repeat(2, 320px);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.popular_item__title {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: transparent;
+    align-items: center;
+}
+
+.popular_item {
+    background: #000;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+}
+
+.popular_item img {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: brightness(50%);
+    transition: 0.3s;
+}
+
+.popular_item__title p{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 300;
+    font-size: 29px;
+}
+
+.popular_item:hover img {
+    filter: brightness(100%);
+}
+
+.popular_item__title {
+    color: #fff;
+    font-size: 29px;
+    font-weight: 300;
+}
+
+/* ================= Advantage ================= */ 
+
+.advantages_desc {
+    margin-bottom: 70px;
+}
+
+.advantages_container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.advantage_item {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantage_item h3 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+.advantage_item p {
+    text-align: center;
+}
+
+/* ================= Footer ================= */ 
+
+.footer {
+    padding: 14px 0;
+}
+
+.footer p {
+    line-height: 16px;
+    text-align: right;
+    color: #fff;
+    font-size: 16px;
+    margin: 7px 0;
+}
